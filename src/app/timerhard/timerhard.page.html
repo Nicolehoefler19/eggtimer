@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Eieruhr</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<ion-grid>
+  <ion-row class="ion-align-items-center">
+    <ion-col size=12>
+
+        <circle-progress (click)="startTime()" [percent]="percent" [maxPercent]="100" [radius]="radius" [outerStrokeWidth]="20" [innerStrokeWidth]="5"
+        [outerStrokeColor]="'#ffae00'" [innerStrokeColor]="'#ffae61'" [unitsColor]="'rgba(255, 255, 255, 0)'" [subtitleColor]="'rgba(255, 255, 255, 0)'" [titleColor]="'rgba(255, 255, 255, 0)'"></circle-progress>
+
+        <p class="time ion-text-center">{{ minutesBelow }}:{{ secondsBelow }}</p>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>
